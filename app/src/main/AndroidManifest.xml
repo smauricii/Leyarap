@@ -9,19 +9,49 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ejemplos.EjemploActivityCreadaPausa" />
-        <activity android:name=".CrearEventoPusaActivity" />
-        <activity android:name=".PausasActivasActivity" />
-        <activity android:name=".HomeActivity" />
-        <activity android:name=".LoginActicity" />
-        <activity android:name=".EncuestaActicity" />
-        <activity android:name=".InicioActicity">
+        <!--aactividades de ejemplo-->
+        <activity android:name=".PensamientosActivityCreadaEjemplo"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".MetasLogrosActivityCreadaEjemplo"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".EstadoAnimoActivityCreadaEjemplo"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".MeditacionActivityCreadaEjemplo"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <!--aactividades de ejemplo-->
+
+        <activity android:name=".CrearEventoSaludActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity android:name=".ActivityCreadaSalud" />
+
+        <activity android:name=".SaludActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity android:name=".ActivityCreadaPausa" />
+        <activity
+            android:name=".CrearEventoPusaActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PausasActivasActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LoginActicity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".EncuestaActicity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".InicioActicity"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
     </application>
 

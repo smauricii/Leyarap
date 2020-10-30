@@ -1,14 +1,13 @@
-<?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondo"
-    tools:context=".CrearEventoPusaActivity">
+    tools:context=".CrearEventoSaludActivity">
 
     <LinearLayout
-        android:id="@+id/linearLayout7"
+        android:id="@+id/linearLayout"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:gravity="center_horizontal"
@@ -19,7 +18,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/txt_crear_evento"
+            android:id="@+id/txt_crear_evento_salud"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
@@ -27,7 +26,7 @@
             android:textSize="30sp" />
 
         <TextView
-            android:id="@+id/txt_nombre_evento"
+            android:id="@+id/txt_nombre_evento_salud"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="100dp"
@@ -47,7 +46,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <EditText
-            android:id="@+id/txt_nombre"
+            android:id="@+id/edit_nombre_salud"
             android:layout_width="350dp"
             android:layout_height="50dp"
             android:layout_marginBottom="350dp"
@@ -64,7 +63,7 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/txt_seleccion"
+            android:id="@+id/txt_seleccion_salud"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="230dp"
@@ -80,7 +79,7 @@
         android:orientation="horizontal">
 
         <ImageButton
-            android:id="@+id/btn_lunes"
+            android:id="@+id/btn_lunes1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -90,7 +89,7 @@
             app:srcCompat="@drawable/lunes" />
 
         <ImageButton
-            android:id="@+id/btn_martes"
+            android:id="@+id/btn_martes1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -100,7 +99,7 @@
             app:srcCompat="@drawable/martes" />
 
         <ImageButton
-            android:id="@+id/btn_miercoles"
+            android:id="@+id/btn_miercoles1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -110,7 +109,7 @@
             app:srcCompat="@drawable/miercoles" />
 
         <ImageButton
-            android:id="@+id/btn_jueves"
+            android:id="@+id/btn_jueves1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -120,7 +119,7 @@
             app:srcCompat="@drawable/jueves" />
 
         <ImageButton
-            android:id="@+id/btn_viernes"
+            android:id="@+id/btn_viernes1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -137,7 +136,7 @@
         android:orientation="horizontal">
 
         <ImageButton
-            android:id="@+id/btn_sabado"
+            android:id="@+id/btn_sabado1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="100dp"
@@ -148,7 +147,7 @@
             app:srcCompat="@drawable/sabado" />
 
         <ImageButton
-            android:id="@+id/btn_domingo"
+            android:id="@+id/btn_domingo1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -167,7 +166,7 @@
         android:orientation="vertical">
 
         <ImageButton
-            android:id="@+id/btn_crear"
+            android:id="@+id/btn_crear_salud"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="30dp"

@@ -64,35 +64,35 @@
                 app:srcCompat="@drawable/pausas_activas" />
 
             <ImageButton
-                android:id="@+id/imageButton2"
+                android:id="@+id/btn_salud_act"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#00FFFFFF"
                 app:srcCompat="@drawable/salud" />
 
             <ImageButton
-                android:id="@+id/imageButton3"
+                android:id="@+id/btn_meditacion"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#00FFFFFF"
                 app:srcCompat="@drawable/meditacion" />
 
             <ImageButton
-                android:id="@+id/imageButton4"
+                android:id="@+id/btn_estado_animo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#00FFFFFF"
                 app:srcCompat="@drawable/estado_animo" />
 
             <ImageButton
-                android:id="@+id/imageButton5"
+                android:id="@+id/btn_metas_logros"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#00FFFFFF"
                 app:srcCompat="@drawable/metas_logros" />
 
             <ImageButton
-                android:id="@+id/imageButton6"
+                android:id="@+id/btn_pensamientos"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#00FFFFFF"

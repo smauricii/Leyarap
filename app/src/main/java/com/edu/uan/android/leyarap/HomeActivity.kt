@@ -2,9 +2,12 @@ package com.edu.uan.android.leyarap
 
 import android.content.Context
 import android.content.Intent
+import android.content.res.Configuration
 import android.graphics.Typeface
+import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.annotation.RequiresApi
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_home.*
 
@@ -30,6 +33,29 @@ class HomeActivity : AppCompatActivity() {
         pref.apply()
 
         btn_pausas_act.setOnClickListener{pausasActivasAct()}
+        btn_salud_act.setOnClickListener { salud() }
+        //ejemplos dde clasese
+        //meditacion
+        btn_meditacion.setOnClickListener {
+            val intent = Intent(this,MeditacionActivityCreadaEjemplo::class.java)
+            startActivity(intent)
+        }
+        //estado de animo
+        btn_estado_animo.setOnClickListener {
+            val intent = Intent(this,EstadoAnimoActivityCreadaEjemplo::class.java)
+            startActivity(intent)
+        }
+        //metas y logros
+        btn_metas_logros.setOnClickListener {
+            val intent= Intent(this,MetasLogrosActivityCreadaEjemplo::class.java)
+            startActivity(intent)
+        }
+        //pensamientos
+
+        btn_pensamientos.setOnClickListener {
+            val intent = Intent(this,PensamientosActivityCreadaEjemplo::class.java)
+            startActivity(intent)
+        }
     }
     private fun setup(email:String){
         title ="Inicio"
@@ -46,10 +72,22 @@ class HomeActivity : AppCompatActivity() {
 
 
     }
+    @RequiresApi(api = Build.VERSION_CODES.P)
+    override fun attachBaseContext(newBase: Context) {
+        super.attachBaseContext(newBase)
+        val override = Configuration(newBase.resources.configuration)
+        override.fontScale = 1.0f
+        applyOverrideConfiguration(override)
+    }
+
 
     private fun pausasActivasAct(){
         val pausaActivity = Intent(this,PausasActivasActivity::class.java)
         startActivity(pausaActivity)
 
+    }
+    private fun salud(){
+        val intent = Intent(this,SaludActivity::class.java)
+        startActivity(intent)
     }
 }

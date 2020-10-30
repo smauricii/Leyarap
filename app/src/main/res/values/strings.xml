@@ -16,6 +16,9 @@
     <string name="txt_title_ejemplo">Selecciona la cantidad de ejercicios que quieres realizar hoy</string>
     <string name="txt_buscar">Buscar</string>
 
+
+    <string name="txt_salud">Salud</string>
+
     <string name="prefs_file">com.edu.uan.android.leyarap.PREFERENCE_FILE_KEY</string>
     <string name="title_activity_encuesta">EncuestaActivity</string>
     <string name="buscar">Buscar</string>
