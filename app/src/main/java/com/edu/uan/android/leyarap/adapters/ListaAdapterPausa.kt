@@ -21,14 +21,14 @@ class ListaAdapterPausa(private val mContext:Context, private val listaPau:List<
         val ListaPausas= listaPau[position]
 
         layout.txt_lista.text = ListaPausas.titulo
-        layout.txt_hora.text = ListaPausas.diaHora
+        layout.txt_horaf.text = ListaPausas.diaHora
         layout.imageViewPausa.setImageResource(ListaPausas.imagen)
 
         layout.txt_lista.typeface = Typeface.createFromAsset(context?.assets, "fonts/moon.otf")
         layout.txt_lista.setTextColor(Color.WHITE)
 
-        layout.txt_hora.typeface = Typeface.createFromAsset(context?.assets, "fonts/moon.otf")
-        layout.txt_hora.setTextColor(Color.WHITE)
+        layout.txt_horaf.typeface = Typeface.createFromAsset(context?.assets, "fonts/moon.otf")
+        layout.txt_horaf.setTextColor(Color.WHITE)
 
 
         return layout

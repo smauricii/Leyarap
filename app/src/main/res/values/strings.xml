@@ -13,7 +13,9 @@
     <string name="txt_title_crear_evento">Crear Evento</string>
     <string name="txt_nombre_del_evento">Nombre del evento</string>
     <string name="txt_seleccion">Selecciona los dias que quieres realizar este evento</string>
+    <string name="txt_descricion_pensamientos">Escribe lo que piensas</string>
     <string name="txt_title_ejemplo">Selecciona la cantidad de ejercicios que quieres realizar hoy</string>
+    <string name="txt_title_Pensamientos">Pensamientos</string>
     <string name="txt_buscar">Buscar</string>
 
 
@@ -26,4 +28,6 @@
     <string name="tab_text_2">Tab 2</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="delete_item_pensamientos">delete_item_pensamientos</string>
+    <string name="edit_item_pensamientos">edit_item_pensamientos</string>
 </resources>

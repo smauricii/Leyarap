@@ -8,6 +8,12 @@ import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.annotation.RequiresApi
+import com.edu.uan.android.leyarap.ejemplos.EstadoAnimoActivityCreadaEjemplo
+import com.edu.uan.android.leyarap.ejemplos.MeditacionActivityCreadaEjemplo
+import com.edu.uan.android.leyarap.ejemplos.MetasLogrosActivityCreadaEjemplo
+import com.edu.uan.android.leyarap.pausas.PausasActivasActivity
+import com.edu.uan.android.leyarap.pensamientos.PensamientosActivity
+import com.edu.uan.android.leyarap.salud.SaludActivity
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_home.*
 
@@ -37,23 +43,23 @@ class HomeActivity : AppCompatActivity() {
         //ejemplos dde clasese
         //meditacion
         btn_meditacion.setOnClickListener {
-            val intent = Intent(this,MeditacionActivityCreadaEjemplo::class.java)
+            val intent = Intent(this, MeditacionActivityCreadaEjemplo::class.java)
             startActivity(intent)
         }
         //estado de animo
         btn_estado_animo.setOnClickListener {
-            val intent = Intent(this,EstadoAnimoActivityCreadaEjemplo::class.java)
+            val intent = Intent(this, EstadoAnimoActivityCreadaEjemplo::class.java)
             startActivity(intent)
         }
         //metas y logros
         btn_metas_logros.setOnClickListener {
-            val intent= Intent(this,MetasLogrosActivityCreadaEjemplo::class.java)
+            val intent= Intent(this, MetasLogrosActivityCreadaEjemplo::class.java)
             startActivity(intent)
         }
         //pensamientos
 
         btn_pensamientos.setOnClickListener {
-            val intent = Intent(this,PensamientosActivityCreadaEjemplo::class.java)
+            val intent = Intent(this, PensamientosActivity::class.java)
             startActivity(intent)
         }
     }
@@ -82,12 +88,12 @@ class HomeActivity : AppCompatActivity() {
 
 
     private fun pausasActivasAct(){
-        val pausaActivity = Intent(this,PausasActivasActivity::class.java)
+        val pausaActivity = Intent(this, PausasActivasActivity::class.java)
         startActivity(pausaActivity)
 
     }
     private fun salud(){
-        val intent = Intent(this,SaludActivity::class.java)
+        val intent = Intent(this, SaludActivity::class.java)
         startActivity(intent)
     }
 }

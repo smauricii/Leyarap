@@ -12,7 +12,7 @@ class ViewPagerAdapter(fa: FragmentActivity) : FragmentStateAdapter(fa) {
     }
 
     override fun getItemCount(): Int {
-        return 7
+        return 6
     }
 //aca toca aplicar todos los textos del fragmento NO OLVIDAR!!!!!!!!!!11
     override fun createFragment(position: Int): Fragment {
@@ -70,7 +70,7 @@ class ViewPagerAdapter(fa: FragmentActivity) : FragmentStateAdapter(fa) {
                 return fragment
 
             }
-            6 -> {
+/*            6 -> {
                 val fragment = FragmentHora()
                 fragment.arguments = Bundle().apply {
                     // Our object is just an integer :-P
@@ -78,7 +78,7 @@ class ViewPagerAdapter(fa: FragmentActivity) : FragmentStateAdapter(fa) {
                 }
                 return fragment
 
-            }
+            }*/
             else -> FragmentEncuestaPausas()
         }
 

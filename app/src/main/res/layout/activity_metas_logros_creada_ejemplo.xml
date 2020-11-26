@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/fondo"
     android:textAlignment="center"
-    tools:context=".MetasLogrosActivityCreadaEjemplo">
+    tools:context=".ejemplos.MetasLogrosActivityCreadaEjemplo">
 
     <ImageButton
         android:id="@+id/imageButton2"

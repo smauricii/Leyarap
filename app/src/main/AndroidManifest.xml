@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.edu.uan.android.leyarap">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,31 +12,43 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <!--aactividades de ejemplo-->
-        <activity android:name=".PensamientosActivityCreadaEjemplo"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity android:name=".MetasLogrosActivityCreadaEjemplo"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".EstadoAnimoActivityCreadaEjemplo"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".MeditacionActivityCreadaEjemplo"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <!--aactividades de ejemplo-->
-
-        <activity android:name=".CrearEventoSaludActivity"
-            android:theme="@style/AppTheme.NoActionBar"/>
-
-        <activity android:name=".ActivityCreadaSalud" />
-
-        <activity android:name=".SaludActivity"
-            android:theme="@style/AppTheme.NoActionBar"/>
-
-        <activity android:name=".ActivityCreadaPausa" />
         <activity
-            android:name=".CrearEventoPusaActivity"
+            android:name=".pausas.QuincePausaActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".pausas.DiezPausaActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".pausas.CincoPausaActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".PausasActivasActivity"
+            android:name=".pensamientos.CrearEventoPensmientosActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".pensamientos.ActivityCreadaPensamientos" /> <!-- aactividades de ejemplo -->
+        <activity
+            android:name=".pensamientos.PensamientosActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ejemplos.MetasLogrosActivityCreadaEjemplo"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ejemplos.EstadoAnimoActivityCreadaEjemplo"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ejemplos.MeditacionActivityCreadaEjemplo"
+            android:theme="@style/AppTheme.NoActionBar" /> <!-- aactividades de ejemplo -->
+        <activity
+            android:name=".salud.CrearEventoSaludActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".salud.ActivityCreadaSalud" />
+        <activity
+            android:name=".salud.SaludActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".pausas.ActivityCreadaPausa" />
+        <activity
+            android:name=".pausas.CrearEventoPusaActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".pausas.PausasActivasActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".HomeActivity"

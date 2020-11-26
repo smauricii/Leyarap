@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ActivityCreadaPausa"
+    tools:context=".pausas.ActivityCreadaPausa"
     android:background="@drawable/fondo">
 
     <LinearLayout
@@ -38,21 +38,21 @@
             android:orientation="vertical">
 
             <ImageButton
-                android:id="@+id/imageButton"
+                android:id="@+id/btn_cinco"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#00FFFFFF"
                 app:srcCompat="@drawable/btn_cinco" />
 
             <ImageButton
-                android:id="@+id/imageButton7"
+                android:id="@+id/btn_diez"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#00FFFFFF"
                 app:srcCompat="@drawable/btn_diez" />
 
             <ImageButton
-                android:id="@+id/imageButton9"
+                android:id="@+id/btn_quince"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="14dp"

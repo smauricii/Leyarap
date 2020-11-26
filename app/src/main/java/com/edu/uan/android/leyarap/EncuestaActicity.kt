@@ -43,10 +43,10 @@ class EncuestaActicity : AppCompatActivity() {
                             tab.text = ""
                             tab.setIcon(R.drawable.ic_pensamiento)
                         }
-                        6 -> {
+/*                        6 -> {
                             tab.text = ""
                             tab.setIcon(R.drawable.ic_reloj)
-                        }
+                        }*/
                     }
                 })
         tabLayoutMediator.attach()

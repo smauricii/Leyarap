@@ -1,5 +1,6 @@
 package com.edu.uan.android.leyarap.fragments
 
+import android.content.Intent
 import android.graphics.Color
 import android.graphics.Typeface
 import android.os.Bundle
@@ -7,9 +8,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.edu.uan.android.leyarap.LoginActicity
 import com.edu.uan.android.leyarap.R
-import kotlinx.android.synthetic.main.fragment_encuesta_meditacion.*
 import kotlinx.android.synthetic.main.fragment_encuesta_pensamientos.*
+
 
 
 class FragmentEncuestaPensamientos : Fragment() {
@@ -33,6 +35,14 @@ class FragmentEncuestaPensamientos : Fragment() {
             parrafo6.text= "Nuestros pensamientos acerca de nuestras experiencias tienen un gran impacto en nuestras respuestas emocionales a estos sucesos. A veces nuestros pensamientos no son verdaderos o justos, al observar detenidamente tus pensamientos, puedes trabajar en lograr interpretaciones mas equilibradas y precisas"
             parrafo6.setTextColor(Color.WHITE)
             parrafo6.typeface = Typeface.createFromAsset(context?.assets, "fonts/moon.otf")
+
+            btnContinuarP.setOnClickListener { abirLogin(view) }
         }
+    }
+
+    fun abirLogin(v:View) {
+
+        val intent = Intent(activity, LoginActicity::class.java)
+        startActivity(intent)
     }
 }
